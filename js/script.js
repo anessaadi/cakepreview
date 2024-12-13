@@ -99,7 +99,7 @@ const capitalizeFirstLetter = (string) => (string ? string.charAt(0).toUpperCase
 
 
 const fullParam = getParameterByName('a', currentUrl);
-if (fullParam) {
+
 // const nameParam = capitalizeFirstLetter(getParameterByName('a', currentUrl));
 const paramsArray = fullParam.split('_');
 const nameParam = capitalizeFirstLetter(paramsArray[0]);
@@ -108,9 +108,7 @@ const ageParam = paramsArray[1];
 const selectedCheckboxSet1 = paramsArray[2];
 const selectedCheckboxSet2 = paramsArray[3];
 const selectedCheckboxSet3 = paramsArray[4];
-} else {
-    console.error('Parameter "a" not found in URL.');
-}
+
 
 // console.log("Name:", nameParam);
 // console.log("Age:", ageParam);
