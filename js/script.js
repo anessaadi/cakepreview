@@ -101,7 +101,7 @@ const capitalizeFirstLetter = (string) => (string ? string.charAt(0).toUpperCase
 const fullParam = getParameterByName('a', currentUrl);
 if (fullParam) {
 // const nameParam = capitalizeFirstLetter(getParameterByName('a', currentUrl));
-const paramsArray = currentUrl.split('_');
+const paramsArray = fullParam.split('_');
 const nameParam = capitalizeFirstLetter(paramsArray[0]);
 // Extracting values based on position in the URL
 const ageParam = paramsArray[1];
