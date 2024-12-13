@@ -98,7 +98,7 @@ const currentUrl = window.location.href;
 const capitalizeFirstLetter = (string) => (string ? string.charAt(0).toUpperCase() + string.slice(1) : '');
 
 const nameParam = capitalizeFirstLetter(getParameterByName('a', currentUrl));
-const paramsArray = currentUrl.split('&');
+const paramsArray = currentUrl.split('_');
 
 // Extracting values based on position in the URL
 const ageParam = paramsArray[1];
